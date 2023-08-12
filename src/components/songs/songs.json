@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_songs_songs",
+  "info": {
+    "displayName": "songs"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "audio": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

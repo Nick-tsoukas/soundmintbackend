@@ -1,0 +1,121 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bands",
+  "info": {
+    "singularName": "band",
+    "pluralName": "bands",
+    "displayName": "band",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "city": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "genre": {
+      "type": "string"
+    },
+    "members": {
+      "displayName": "members",
+      "type": "component",
+      "repeatable": true,
+      "component": "members.members"
+    },
+    "photos": {
+      "displayName": "photos",
+      "type": "component",
+      "repeatable": true,
+      "component": "photos.photos"
+    },
+    "shows": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::show.show"
+    },
+    "albums": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::album.album"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "bands"
+    },
+    "bandshows": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::show.show",
+      "mappedBy": "band"
+    },
+    "bandAlbum": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::album.album",
+      "mappedBy": "band"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "twitch": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "tiktok": {
+      "type": "string"
+    },
+    "youtube": {
+      "type": "string"
+    },
+    "bandcamp": {
+      "type": "string"
+    },
+    "spotify": {
+      "type": "string"
+    },
+    "soundcloud": {
+      "type": "string"
+    },
+    "discord": {
+      "type": "string"
+    },
+    "snapchat": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "text"
+    }
+  }
+}

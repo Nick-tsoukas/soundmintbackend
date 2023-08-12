@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_members_members",
+  "info": {
+    "displayName": "members",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "firstname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "instrument": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "bio": {
+      "type": "text"
+    }
+  }
+}

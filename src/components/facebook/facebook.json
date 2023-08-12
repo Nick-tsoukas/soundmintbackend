@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_facebook_facebooks",
+  "info": {
+    "displayName": "facebook",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "qrs",
+  "info": {
+    "singularName": "qr",
+    "pluralName": "qrs",
+    "displayName": "qr",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "qrs"
+    },
+    "type": {
+      "type": "string"
+    },
+    "track": {
+      "type": "integer"
+    },
+    "data": {
+      "type": "json"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "dataId": {
+      "type": "string"
+    }
+  }
+}
